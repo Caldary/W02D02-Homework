@@ -10,7 +10,11 @@ class BearsTest < MiniTest::Test
 
 
     def setup()
-        @bear = bear.new("Balu", "Grizzly", [])
+        @bear = Bears.new("Balu", "Grizzly",[])
+    end
+
+    def test_bear_name()
+        assert_equal("Balu", @bear.name())
     end
 
 end

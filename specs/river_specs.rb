@@ -10,8 +10,12 @@ class RiverTest < MiniTest::Test
 
     
     def setup()
-        @river = river.new("Amazon")
-        @fish = fish.new(["Larry", "Gary", "Barry", "Harry", "Steve" "Alan"])
+        @river = River.new("Amazon")
+        @fish = Fish.new(["Larry", "Gary", "Barry", "Harry", "Steve" "Alan"])
     end
+
+    def test_river_name()
+        assert_equal("Amazon", @river.name())
+      end
 
 end
