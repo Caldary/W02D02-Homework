@@ -17,4 +17,11 @@ class BearsTest < MiniTest::Test
         assert_equal("Balu", @bear.name())
     end
 
+    def test_bear_type()
+        assert_equal("Grizzly", @bear.type())
+    end
+
+    def test_stomach_is_empty()
+        assert_equal(0, @bear.stomach.count)
+    end
 end
