@@ -10,7 +10,12 @@ class FishTest < MiniTest::Test
 
 
     def setup()
-        @fish = fish.new(["Larry", "Gary", "Barry", "Harry", "Steve" "Alan"])
+        @fish = Fish.new(["Larry", "Gary", "Barry", "Harry", "Steve" "Alan"])
+    end
+
+    def test_can_create_fish()
+        assert_equal(Fish, @fish.class())
     end
 
 end
+
